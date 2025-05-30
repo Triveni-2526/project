@@ -1,0 +1,9 @@
+Hi {FULL NAME},<br/>
+<br/>
+
+Please find your password below.
+
+Password: {PWD}
+
+Thanks
+Admin Team.tml

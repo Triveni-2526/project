@@ -1,0 +1,12 @@
+Hello ${name},<br/>
+<br/>
+Thank you for registering with us.<br/>
+<br/>
+Your temporary password is: ${tempPassword}<br/>
+<br/>
+To activate your account, click the link below:<br/>
+${activationLink}<br/>
+<br/>
+Please change your password after login.<br/>
+<br/>
+Thanks,

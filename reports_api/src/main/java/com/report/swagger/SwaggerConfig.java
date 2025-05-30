@@ -1,0 +1,21 @@
+package com.report.swagger;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Info;
+
+@Configuration
+public class SwaggerConfig {
+
+	@Bean
+    public OpenAPI insuranceProjectOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("Insurance Project API")
+                        .description("APIs for Insurance Plans and Categories")
+                        .version("1.0.0"));
+    }
+
+}

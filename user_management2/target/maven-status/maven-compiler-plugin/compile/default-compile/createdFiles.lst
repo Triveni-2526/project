@@ -1,0 +1,13 @@
+com\user\binding\ActivateAccount.class
+com\user\binding\LoginRequest.class
+com\user\mapper\UserMapperImpl.class
+com\user\entity\User.class
+com\user\binding\RegistrationRequest.class
+com\user\mapper\UserMapper.class
+com\user\binding\UserResponse.class
+com\user\service\UserService.class
+com\user\controller\UserController.class
+com\user\service\UserServiceImpl.class
+com\user\UserManagementApplication.class
+com\user\repository\UserRepo.class
+com\user\utils\EmailUtils.class

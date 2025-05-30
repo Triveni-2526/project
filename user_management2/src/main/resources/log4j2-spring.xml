@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="%style{%d{ISO8601}} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{10}}{bright,yellow}: %msg%n%throwable" />
+        </Console>
+        <SplunkHttp
+            name="splunkhttp"
+            url="https://prd-p-x2krf.splunkcloud.com:8088/services/collector/event"
+            token="3eff4989-ab9c-484a-94c9-dc4929925572"
+            host="springboot-app"
+            index="user-management"
+            type="raw"
+            source="user-logs"
+            sourcetype="log4j"
+            messageFormat="application/json"
+            disableCertificateValidation="true">
+            <PatternLayout pattern="%m%n" />
+        </SplunkHttp>
+    </Appenders>
+
+    <Loggers>
+        <!-- LOG everything at INFO level -->
+        <Root level="info">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="splunkhttp" />
+        </Root>
+    </Loggers>
+</Configuration>
